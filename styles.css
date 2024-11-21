@@ -1,0 +1,57 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #296cb9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgb(135, 150, 207);
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4343;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #6eb67d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9ed5ab
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr.high-cost {
+    background-color: yellow;
+}
+
+td button {
+    margin-left: 10px;
+    padding: 5px 10px;
+}
