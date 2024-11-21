@@ -1,7 +1,7 @@
 const tarefasList = document.getElementById('tarefasList');
 const incluirTarefaBtn = document.getElementById('incluirTarefaBtn');
 
-// Função para listar as tarefas
+
 function listarTarefas() {
     fetch('http://localhost:3000/tarefas')
         .then(response => response.json())
@@ -28,7 +28,7 @@ function listarTarefas() {
 }
 
 
-// Função para excluir tarefa
+
 function excluirTarefa(id) {
     if (confirm('Tem certeza que deseja excluir esta tarefa?')) {
         fetch(`http://localhost:3000/tarefas/${id}`, {
@@ -39,7 +39,7 @@ function excluirTarefa(id) {
     }
 }
 
-// Função para editar tarefa
+
 function editarTarefa(id, nome_tarefa, custo, data_limite) {
     const novoNome = prompt('Novo nome da tarefa:', nome_tarefa);
     const novoCusto = prompt('Novo custo da tarefa:', custo);
@@ -58,7 +58,7 @@ function editarTarefa(id, nome_tarefa, custo, data_limite) {
     }
 }
 
-// Função para incluir tarefa
+
 incluirTarefaBtn.addEventListener('click', () => {
     const nomeTarefa = prompt('Nome da Tarefa:');
     const custo = prompt('Custo da Tarefa:');
@@ -77,6 +77,6 @@ incluirTarefaBtn.addEventListener('click', () => {
     }
 });
 
-// Listar tarefas ao carregar a página
+
 listarTarefas();
 
